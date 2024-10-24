@@ -10,7 +10,8 @@ func TestSummaryRanges(t *testing.T) {
 		got  []int
 		want []string
 	}{
-		{[]int{0, 1, 2, 4, 5, 7}, []string{"0->2", "4->5", "7"}},
+		{[]int{6, 8, 9}, []string{"6", "8->9"}},
+		{[]int{4, 5, 7}, []string{"4->5", "7"}},
 	}
 
 	for i, test := range tests {
